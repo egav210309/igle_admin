@@ -1,0 +1,336 @@
+ERROR - 2021-09-20 11:01:39 --> Error connecting to the database: No such file or directory
+ERROR - 2021-09-20 11:03:24 --> Error connecting to the database: No such file or directory
+ERROR - 2021-09-20 11:07:20 --> Error connecting to the database: Unknown database 'igleadmin'
+ERROR - 2021-09-20 11:17:13 --> Error connecting to the database: Connection refused
+ERROR - 2021-09-20 11:20:10 --> Error connecting to the database: Connection refused
+ERROR - 2021-09-20 11:20:39 --> Error connecting to the database: Unknown database 'igleadmin'
+ERROR - 2021-09-20 11:23:35 --> Error connecting to the database: Unknown database 'igleadmin'
+ERROR - 2021-09-20 11:32:31 --> Error connecting to the database: Unknown database 'igleadmin'
+ERROR - 2021-09-20 11:42:11 --> Error connecting to the database: Unknown database 'igleadmin'
+ERROR - 2021-09-20 11:43:21 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-09-20 11:48:51 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-09-20 11:50:09 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-09-20 11:51:24 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-09-20 11:52:53 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-09-20 11:53:10 --> Error connecting to the database: No such file or directory
+ERROR - 2021-09-20 11:53:27 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+ERROR - 2021-09-20 11:54:03 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-09-20 11:54:15 --> Error connecting to the database: Unknown database 'igleadmin'
+ERROR - 2021-09-20 11:54:52 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-09-20 11:57:31 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-09-20 11:59:24 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-09-20 11:59:57 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+ERROR - 2021-09-20 12:00:39 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2021-09-20 12:00:54 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-09-20 12:01:20 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-09-20 12:01:52 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-09-20 12:21:23 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-09-20 12:23:48 --> Table 'users' already exists
+CRITICAL - 2021-09-20 13:18:22 --> syntax error, unexpected '"users"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/eduardor...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(767): class_exists('\\App\\Controller...', true)
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(386): CodeIgniter\CodeIgniter->startController()
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-09-20 13:18:22 --> syntax error, unexpected '"users"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/eduardor...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(767): class_exists('\\App\\Controller...', true)
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(386): CodeIgniter\CodeIgniter->startController()
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-09-20 13:18:23 --> syntax error, unexpected '"users"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/eduardor...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(767): class_exists('\\App\\Controller...', true)
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(386): CodeIgniter\CodeIgniter->startController()
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-09-20 13:18:47 --> syntax error, unexpected '"users"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/eduardor...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(767): class_exists('\\App\\Controller...', true)
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(386): CodeIgniter\CodeIgniter->startController()
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-09-20 13:19:19 --> syntax error, unexpected '"users"' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/eduardor...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(767): class_exists('\\App\\Controller...', true)
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(386): CodeIgniter\CodeIgniter->startController()
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-09-20 15:12:01 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:12:01 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Login.php(29): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:12:21 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:12:21 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Login.php(29): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:23:34 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:23:34 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(38): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:32:18 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:32:18 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(31): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:32:18 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:32:18 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(31): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:32:18 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:32:18 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(31): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:32:38 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:32:38 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(37): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:32:42 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:32:42 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(38): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:33:32 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:33:32 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(31): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:33:39 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:33:39 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(31): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:33:41 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:33:41 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(31): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:33:41 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:33:41 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(31): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:33:41 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:33:41 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(31): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:34:25 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:34:25 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(31): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:34:33 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:34:33 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(31): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:34:37 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:34:37 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(31): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:35:43 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:35:43 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(31): App\Models\users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:42:48 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:42:48 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(31): App\Models\Users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-20 15:46:56 --> Unknown column 'users' in 'where clause'
+CRITICAL - 2021-09-20 15:46:56 --> Call to a member function getResultArray() on bool
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(31): App\Models\Users->iniciarsesion(Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-20 16:26:39 --> syntax error, unexpected '{'
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/eduardor...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
+#3 [internal function]: spl_autoload_call('Config\\Filters')
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Factories.php(136): class_exists('Config\\Filters')
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Factories.php(106): CodeIgniter\Config\Factories::locateClass(Array, 'Filters')
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(197): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Services.php(258): config('Filters')
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::filters(NULL, false)
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Services.php(255): CodeIgniter\Config\BaseService::getSharedInstance('filters', NULL)
+#11 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::filters()
+#12 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#13 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2021-09-20 16:26:42 --> syntax error, unexpected '{'
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/eduardor...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
+#3 [internal function]: spl_autoload_call('Config\\Filters')
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Factories.php(136): class_exists('Config\\Filters')
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Factories.php(106): CodeIgniter\Config\Factories::locateClass(Array, 'Filters')
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(197): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Services.php(258): config('Filters')
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::filters(NULL, false)
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Services.php(255): CodeIgniter\Config\BaseService::getSharedInstance('filters', NULL)
+#11 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::filters()
+#12 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#13 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2021-09-20 16:26:43 --> syntax error, unexpected '{'
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/eduardor...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
+#3 [internal function]: spl_autoload_call('Config\\Filters')
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Factories.php(136): class_exists('Config\\Filters')
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Factories.php(106): CodeIgniter\Config\Factories::locateClass(Array, 'Filters')
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(197): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Services.php(258): config('Filters')
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::filters(NULL, false)
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Services.php(255): CodeIgniter\Config\BaseService::getSharedInstance('filters', NULL)
+#11 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::filters()
+#12 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#13 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2021-09-20 16:26:45 --> syntax error, unexpected '{'
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/eduardor...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
+#3 [internal function]: spl_autoload_call('Config\\Filters')
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Factories.php(136): class_exists('Config\\Filters')
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Factories.php(106): CodeIgniter\Config\Factories::locateClass(Array, 'Filters')
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(197): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Services.php(258): config('Filters')
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::filters(NULL, false)
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/Services.php(255): CodeIgniter\Config\BaseService::getSharedInstance('filters', NULL)
+#11 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::filters()
+#12 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#13 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2021-09-20 16:44:50 -->  route cannot be found while reverse-routing.
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(51): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-09-20 16:54:37 --> Class 'App\Controllers\Admin\BaseController' not found
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(264): include_once()
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/eduardor...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(767): class_exists('\\App\\Controller...', true)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(386): CodeIgniter\CodeIgniter->startController()
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-09-20 16:55:52 --> Class 'App\Controllers\Admin\BaseController' not found
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(264): include_once()
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/eduardor...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(767): class_exists('\\App\\Controller...', true)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(386): CodeIgniter\CodeIgniter->startController()
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

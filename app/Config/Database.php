@@ -32,10 +32,10 @@ class Database extends Config
      */
     public $default = [
         'DSN'      => '',
-        'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'hostname' => '127.0.0.1',
+        'username' => 'root',
+        'password' => 'root',
+        'database' => 'igleadmin',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
@@ -47,7 +47,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3306,
+        'port'     => 8889,
     ];
 
     /**
@@ -59,8 +59,8 @@ class Database extends Config
     public $tests = [
         'DSN'      => '',
         'hostname' => '127.0.0.1',
-        'username' => '',
-        'password' => '',
+        'username' => 'root',
+        'password' => 'root',
         'database' => ':memory:',
         'DBDriver' => 'SQLite3',
         'DBPrefix' => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
@@ -73,7 +73,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3306,
+        'port'     => 8889,
     ];
 
     public function __construct()

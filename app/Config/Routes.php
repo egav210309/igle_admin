@@ -17,7 +17,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('login');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -28,10 +28,31 @@ $routes->setAutoRoute(true);
  * Route Definitions
  * --------------------------------------------------------------------
  */
-
+ 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+
+ //Rutas referentes a login
+$routes->group('/', function($routes){
+	$routes->get('/', 'login::index', ['as' => 'login']);
+	$routes->post('/login', 'login::login');
+	$routes->get('/signout', 'login::signout');
+
+});
+
+$routes->group('auth', ['namespace' => 'App\Controllers\Auth'], function($routes){
+
+	$routes->get('registro', 'Register::index', ['as' => 'register']);
+	$routes->post('store', 'Register::store');
+	$routes->get('login', 'login::index', ['as' => 'login']);
+	$routes->get('copia', 'Register::copia', ['as' => 'copia']);
+
+});
+
+
+$routes->group('admin', ['namespace' => 'App\Controllers\Admin'], function($routes){
+	$routes->get('inicio', 'Dashboard::index', ['as' => 'admin']);
+});
 
 /*
  * --------------------------------------------------------------------
