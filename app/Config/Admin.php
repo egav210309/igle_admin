@@ -8,5 +8,6 @@ class Admin extends BaseConfig
 {
     public $defaultGroupUsers  = 'usuario';
     public $defaultEstadUsers  = 'pendiente';
+    public $regPerPage  = 10;
 
 }

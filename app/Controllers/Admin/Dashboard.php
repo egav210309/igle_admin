@@ -9,10 +9,7 @@ class Dashboard extends BaseController
     //pantalla ptincipal
     public function index()
     {
-        $principal =    view('include/header').
-                        view('include/footer').
-                        view('dashboard');
-        return $principal;
+        return view('Admin/dashboard');
     }
 
 }

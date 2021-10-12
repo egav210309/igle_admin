@@ -17,16 +17,16 @@ Login
                         <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
                         <div class="col-lg-6">
                             <div class="p-5">
-                                <article class="message is-<?=session('msg.type') ?>">
                                 <?php if(session('msg')):?>
-                                    <div class="message-header" >
-                                        <p>Error</p>
-                                        <button class="delete" aria-label="delete"></button>
-                                    </div>
-                                    <div class="message-body">
-                                        <?=session('msg.body');?>
-                                    </div>
-                                </article>
+                                    <article class="message is-<?=session('msg.type') ?>">
+                                        <div class="message-header" >
+                                            <p>Error</p>
+                                            <button class="delete" aria-label="delete"></button>
+                                        </div>
+                                        <div class="message-body">
+                                            <?=session('msg.body');?>
+                                        </div>
+                                    </article>
                                 <?php endif;?>
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">Iniciar Sesión</h1>

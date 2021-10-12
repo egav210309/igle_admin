@@ -23,7 +23,6 @@ class Register extends BaseController{
 
 	public function store(){
 
-
 		$validation =  \Config\Services::validation();
 		$validation->setRules([
 			'first_name'		=> 'required|alpha_space',

@@ -49,9 +49,15 @@ $routes->group('auth', ['namespace' => 'App\Controllers\Auth'], function($routes
 
 });
 
-
-$routes->group('admin', ['namespace' => 'App\Controllers\Admin'], function($routes){
+//solo para administradores
+$routes->group('admin', ['namespace' => 'App\Controllers\Admin', 'filter' => 'auth:admin,superadmin'], function($routes){
 	$routes->get('inicio', 'Dashboard::index', ['as' => 'admin']);
+	$routes->get('pueblo', 'Pueblo::index', ['as' => 'pueblo']);
+	$routes->get('pueblo_crear', 'Pueblo::create', ['as' => 'user_create']);
+	$routes->post('pueblo_store', 'Pueblo::store', ['as' => 'user_store']);
+	$routes->get('pueblo/editar/(:any)', 'Pueblo::edit/$1', ['as' => 'user_edit']);
+    $routes->post('admin/actualizar', 'Pueblo::update', ['as' => 'actualizar']);
+	
 });
 
 /*

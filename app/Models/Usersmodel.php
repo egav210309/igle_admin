@@ -8,19 +8,19 @@ class Usersmodel extends Model{
 
 	protected $table      = 'users'; // la tabla a la que esta amarrada
     protected $primaryKey = 'user_id'; // campo de llave primaria
-
     protected $useAutoIncrement = true;
-
     //protected $returnType     = 'array';
     protected $returnType     = User::class; // como va a devolver las funciones
-    protected $useSoftDeletes = true;
+    protected $useSoftDeletes = false;
 
     protected $allowedFields = [
                             'first_name', 'last_name', 'password', 'username', 'type', 'usuario', 'fecha_nacimiento',
-                            'cod_estado', 'secund_name', 'secundlast_name', 'apell_casada', 'estadociv', 'telefono'
+                            'cod_estado', 'secund_name', 'secundlast_name', 'apell_casada', 'estadociv', 'telefono',
+                            'fecha_nacimiento', 'direccion', 'id_gobierno', 'id_subred', 'casadepaz', 
+                            'informacionadicional', 'id_cdp', 'fotografia' 
                         ];
 
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
@@ -44,7 +44,6 @@ class Usersmodel extends Model{
     	$row = $this->db->table('groups')
     			->where('name_group', $group)
     			->get()->getFirstRow();
-                
 		if($row){
 			$this->assignEstado = $row->id_group;
 		} 
@@ -68,8 +67,9 @@ class Usersmodel extends Model{
 	}
 
     public function getUser(string $column, string $value){
-
-        return $this->where($column, $value)->first();
+        $Usuario = $this->db->table('users');
+        $Usuario->where($column,  $value);
+        return $Usuario->get()->getResult();
     }
 }
 

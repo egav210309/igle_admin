@@ -10,7 +10,6 @@ class login extends BaseController
 {
     public function index()
     {
-
         if(!session()->is_logged){
             $mensaje = session('mensaje');
             $principal =    view('include/header_login').
@@ -18,9 +17,7 @@ class login extends BaseController
                     view('login/iniciarsesion', ["mensaje" => $mensaje]);
             return $principal;      
         }
-
         return redirect()->route('admin');
-        
         
     }
 
