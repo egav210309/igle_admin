@@ -30,7 +30,7 @@ Pueblo
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-bordered" id="listadogeneral" width="100%" cellspacing="0">
+                            <table class="table table-bordered" id="listadopersonatable" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
                                         <th>id</th>
@@ -91,6 +91,7 @@ Pueblo
                     
                         </div>
                     </div>
+                    <?= $pager->links() ?>
                 </div>
             </div>
         </div>
@@ -98,23 +99,4 @@ Pueblo
     <!-- End of Page Wrapper -->
 <!-- End of Main Content -->
 <?= $this->renderSection('include/copyright');?>
-<?=$this->endSection();?>
-<?=$this->section('js')?>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.9.2/tinymce.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-        $('#listadogeneral').DataTable({
-            "scrollCollapse": true,
-            "order": [[ 0, "asc" ]],
-            "oLanguage": {
-                "sLengthMenu": "_MENU_ records",
-                "oPaginate": {
-                    "sPrevious": "Ant",
-                    "sNext": "Sig"
-                },
-                "sEmptyTable": "No se encontraron registros."
-            },
-        });
-    });
-  </script>
 <?=$this->endSection();?>

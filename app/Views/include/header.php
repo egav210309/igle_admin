@@ -53,84 +53,91 @@
             <hr class="sidebar-divider">
             <!-- Heading -->
             <div class="sidebar-heading">
-                Usuarios
+                Personas
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item <?= $active==1000 ? 'active' : '';?>">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-user"></i>
-                    <span>Pueblo</span>
+                    <i class="fas fa-fw fa-network-wired"></i>
+                    <span> Mi Red </span>
                 </a>
                 <div id="collapseTwo" class="collapse <?php if($seccion>0 && $active==1000){ echo "show"; };?>" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Opciones:</h6>
+                        <h6 class="collapse-header">Pueblo:</h6>
+                        <a class="collapse-item <?php if($seccion==1030 && $active==1000){ echo "active"; };?>" href="<?=base_url(route_to('porautorizar'))?>">Personas por Confirmar</a>
                         <a class="collapse-item <?php if($seccion==1010 && $active==1000){ echo "active"; };?>" href="<?=base_url(route_to('pueblo'))?>">Listado de personas</a>
+                        <a class="collapse-item <?php if($seccion==1020 && $active==1000){ echo "active"; };?>" href="<?=base_url(route_to('bajainact'))?>">Inactivas/Baja</a>
                     </div>
                 </div>
             </li>
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Utilities</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
-                    </div>
-                </div>
-            </li>
-
             <!-- Divider -->
             <hr class="sidebar-divider">
-
+            <!-- Nav Item - Casa de Paz -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCDP"
+                    aria-expanded="true" aria-controls="collapseCDP">
+                    <i class="fas fa-home"></i>
+                    <span> Casa de Paz </span>
+                </a>
+                <div id="collapseCDP" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <!--h6 class="collapse-header">Custom Utilities:</h6-->
+                        <a class="collapse-item" href="">Crear CDP</a>
+                        <a class="collapse-item" href="">Lista de CDP</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEscuelas"
+                    aria-expanded="true" aria-controls="collapseEscuelas">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span> Escuelas de la Visión </span>
+                </a>
+                <div id="collapseEscuelas" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <!--h6 class="collapse-header">Custom Utilities:</h6-->
+                        <a class="collapse-item" href="">Crear escula</a>
+                        <a class="collapse-item" href="">Lista de escuelas</a>
+                    </div>
+                </div>
+            </li>
+            <hr class="sidebar-divider">
             <!-- Heading -->
             <div class="sidebar-heading">
-                Addons
+                Settings
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
+                    <i class="fas fa-fw fa-cogs"></i>
+                    <span>Acciones</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <h6 class="collapse-header"> Tablas:</h6>
+                        <a class="collapse-item" href=""> Gobierno</a>
+                        <a class="collapse-item" href=""> Estatus de persona</a>
+                        <a class="collapse-item" href=""> Estado Civil</a>
+                        <a class="collapse-item" href=""> Áreas de Servicio </a>
                         <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                        <h6 class="collapse-header">Sistema:</h6>
+                        <a class="collapse-item" href=""> Configuraciones </a>
+                        <a class="collapse-item" href=""> Notificaciones </a>
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
+                <a class="nav-link" href="">
+                    <i class="fas fa-fw fa-question"></i>
+                    <span> Soporte </span></a>
             </li>
 
             <!-- Divider -->
@@ -144,8 +151,7 @@
             <!-- Sidebar Message -->
             <div class="sidebar-card d-none d-lg-flex">
                 <img class="sidebar-card-illustration mb-2" src="<?php echo base_url('');?>/public/assets/img/undraw_rocket.svg" alt="...">
-                <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
+                <p class="text-center mb-2"><strong style="color: white;" >Admin</strong> mejor control ...</p>
             </div>
         </ul>
         <!-- Content Wrapper -->
@@ -161,7 +167,7 @@
                         <form
                             class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                             <div class="input-group">
-                                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar Persona"
                                     aria-label="Search" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                     <button class="btn btn-primary" type="button">
@@ -322,7 +328,7 @@
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo session('usuario'); ?></span>
                                     <img class="img-profile rounded-circle"
-                                        src="<?php echo base_url('');?>/public/assets/img/undraw_profile.svg">
+                                        src="<?php echo session('img_usuario'); ?>">
                                 </a>
                                 <!-- Dropdown - User Information -->
                                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

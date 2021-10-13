@@ -16,16 +16,15 @@ use App\Models\CasadepazModel;
 class Pueblo extends BaseController
 {
     //pantalla ptincipal
-    public function index()
-    {	
+    public function index(){	
     	$personas = new Usersmodel();
     	$configur = new \Config\Admin();
 
         return view('Admin/pueblo', [
 	    	'active'	=> 	1000,
 			'seccion'	=> 	1010,
-        	'personas'	=>	$personas->orderBy('created_at', 'ASC')->paginate($configur->regPerPage),
-        	'pager'		=> 	$personas->pager
+			'title'		=> 	"",
+        	'personas'	=>	$personas->orderBy('user_id', 'asc')->findAll()
         ]);
     }
 
@@ -49,7 +48,6 @@ class Pueblo extends BaseController
     }
     //Funcionalidad para guardar el registro de persona
     public function store(){
-
 		$validation =  \Config\Services::validation();
 		$validation->setRules([
 			'first_name'		=> 'required|alpha_space|max_length[20]',
@@ -93,7 +91,6 @@ class Pueblo extends BaseController
 							'body' => 'Usuario registrado con éxito!'
 						]);
     }
-
     //Formulario para editar los registros
     public function edit(string $id){
     	$model = new Usersmodel();
@@ -120,10 +117,8 @@ class Pueblo extends BaseController
         	'cdp'			=> $cdp->findAll()
     	]);
     }
-
     //funcionalidad para actualizar los registros
     public function update(){
-
 		$validation =  \Config\Services::validation();
 		$validation->setRules([
 			'userid'			=> 'required|is_not_unique[users.user_id]',
@@ -193,8 +188,35 @@ class Pueblo extends BaseController
 		return redirect('pueblo')->with('msg', [
 							'type' => 'success',
 							'body' => 'Modificación realizada con éxito!'
-						]);
-						
+						]);					
+    }
+
+    //listado de personas por autorizar
+    public function porAutorizar(){
+    	$personas = new Usersmodel();
+    	$configur = new \Config\Admin();
+
+        return view('Admin/pueblo_varias', [
+	    	'active'	=> 	1000,
+			'seccion'	=> 	1030,
+			'title'		=> 	"por Autorizar",
+        	'personas'	=>	$personas->where('cod_estado', '3')->orderBy('user_id', 'desc')->paginate($configur->regPerPage),
+        	'pager'		=> 	$personas->pager
+        ]);	
+    }
+
+    //listado de personas por autorizar
+    public function deBajaInactiva(){
+    	$personas = new Usersmodel();
+    	$configur = new \Config\Admin();
+    	$where = "cod_estado in('2' , '4')";
+        return view('Admin/pueblo_varias', [
+	    	'active'	=> 	1000,
+			'seccion'	=> 	1020,
+			'title'		=> 	"Baja / Inactivas",
+        	'personas'	=>	$personas->where($where)->orderBy('user_id', 'desc')->paginate($configur->regPerPage),
+        	'pager'		=> 	$personas->pager
+        ]);	
     }
 
 }

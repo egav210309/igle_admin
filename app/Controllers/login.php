@@ -36,7 +36,7 @@ class login extends BaseController
     	$usuario = trim($this->request->getVar('email'));
     	$password = trim($this->request->getVar('password'));
     	$Usuario = new Usersmodel();
-    	
+
     	$datosUsuario = $Usuario->iniciarsesion(['usuario' => $usuario])[0];
 
         $existe = $Usuario->getUser('usuario', $usuario);
@@ -48,7 +48,7 @@ class login extends BaseController
                         'body' => 'Este usuario no se encuentra registrado'
                     ]);
         }
-
+        $usuario = $Usuario->find($datosUsuario->user_id);
     	if($datosUsuario && password_verify($password, $datosUsuario->password)){
     		//guadamos variables de sesion
     		$session = session();
@@ -58,6 +58,7 @@ class login extends BaseController
                 "username" => $datosUsuario->username,
                 "usuario" => $datosUsuario->first_name." ".$datosUsuario->last_name,
                 "type" => $datosUsuario->type,
+                "img_usuario" => $usuario->getLinkFoto(),
                 "is_logged" => true
             ]);
 			return redirect()->route('admin')->with('msg',[

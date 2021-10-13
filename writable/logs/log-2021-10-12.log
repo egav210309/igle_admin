@@ -112,3 +112,140 @@ CRITICAL - 2021-10-12 10:48:58 --> The original file is not a valid file.
 #5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2021-10-12 12:04:56 --> Trying to get property 'user_id' of non-object
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Views/Admin/pueblo.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/eduardor...', 61, Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/eduardor...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render('Admin/pueblo', Array, true)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(27): view('Admin/pueblo', Array)
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->index()
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-12 12:05:24 --> Trying to get property 'user_id' of non-object
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Views/Admin/pueblo.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/eduardor...', 61, Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/eduardor...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render('Admin/pueblo', Array, true)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(28): view('Admin/pueblo', Array)
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->index()
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-12 12:05:52 --> Trying to get property 'user_id' of non-object
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Views/Admin/pueblo.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/eduardor...', 61, Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/eduardor...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render('Admin/pueblo', Array, true)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(27): view('Admin/pueblo', Array)
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->index()
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-12 12:05:54 --> Trying to get property 'user_id' of non-object
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Views/Admin/pueblo.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/eduardor...', 61, Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/eduardor...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render('Admin/pueblo', Array, true)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(27): view('Admin/pueblo', Array)
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->index()
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-12 13:13:03 --> Call to undefined method stdClass::getLinkFoto()
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-12 13:16:19 --> Undefined variable: model
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Users/eduardor...', 51, Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-12 13:17:09 --> syntax error, unexpected 'dropdown' (T_STRING)
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(432): CodeIgniter\View\View->render('include/header', NULL, true)
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Views/Admin/main.php(4): CodeIgniter\View\View->include('include/header')
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/eduardor...')
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(230): CodeIgniter\View\View->render('Admin/main', Array, true)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render('Admin/dashboard', Array, true)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Dashboard.php(12): view('Admin/dashboard')
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-10-12 13:52:33 --> Undefined variable: personas
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Views/Admin/dashboard.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Users/eduardor...', 35, Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/eduardor...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render('Admin/dashboard', Array, true)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Dashboard.php(12): view('Admin/dashboard')
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-12 13:53:14 --> Undefined variable: personas
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Views/Admin/dashboard.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Users/eduardor...', 35, Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/eduardor...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render('Admin/dashboard', Array, true)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Dashboard.php(12): view('Admin/dashboard')
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-12 13:53:21 --> syntax error, unexpected '?>'
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render('Admin/dashboard', Array, true)
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Dashboard.php(12): view('Admin/dashboard')
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-12 13:54:33 --> Undefined variable: personas
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Views/Admin/dashboard.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Users/eduardor...', 35, Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/eduardor...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render('Admin/dashboard', Array, true)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Dashboard.php(12): view('Admin/dashboard')
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-12 13:54:47 --> Undefined variable: personas
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Views/Admin/dashboard.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Users/eduardor...', 35, Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/eduardor...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render('Admin/dashboard', Array, true)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Dashboard.php(12): view('Admin/dashboard')
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-10-12 13:57:04 --> Class 'App\Controllers\Admin\Usersmodel' not found
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-12 14:03:59 --> Undefined variable: persona
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Dashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Users/eduardor...', 19, Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Dashboard->index()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -44,7 +44,7 @@
                     <div class="field-body" style="margin: auto;" >
                       <div class="card-img">
                           <figure class="image" style="width: 15%; margin: auto;" >
-                            <img  class="is-rounded" src="<?=strtolower($usuario->getLinkFoto())?>" style="width: auto; margin: auto;">
+                            <img  class="img-profile rounded-circle" src="<?=strtolower($usuario->getLinkFoto())?>" style="width: auto; margin: auto;">
                           </figure>
                       </div>
                     </div>
