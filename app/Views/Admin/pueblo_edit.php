@@ -16,7 +16,7 @@
           color:red !important;  
         }
     </style>
-<!-- Main Content -->
+    <!-- Main Content -->
     <?php if(session('msg')):?>
         <article class="message is-<?=session('msg.type') ?>">
             <div class="message-body">

@@ -17,6 +17,11 @@
     <link href="<?php echo base_url('');?>/public/assets/css/sb-admin-2.min.css" rel="stylesheet">
         <!-- Custom styles for this page -->
     <link href="<?php echo base_url('');?>/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <!--Select2 -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('');?>/public/assets/select2/select2.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="<?php echo base_url('');?>/public/assets/select2/select2.min.js"></script>
+    <script src="<?php echo base_url('');?>/public/assets/js/script_select2.js"></script>
 
 </head>
 <body id="page-top">
@@ -69,6 +74,8 @@
                         <a class="collapse-item <?php if($seccion==1030 && $active==1000){ echo "active"; };?>" href="<?=base_url(route_to('porautorizar'))?>">Personas por Confirmar</a>
                         <a class="collapse-item <?php if($seccion==1010 && $active==1000){ echo "active"; };?>" href="<?=base_url(route_to('pueblo'))?>">Listado de personas</a>
                         <a class="collapse-item <?php if($seccion==1020 && $active==1000){ echo "active"; };?>" href="<?=base_url(route_to('bajainact'))?>">Inactivas/Baja</a>
+                        <h6 class="collapse-header">Redes:</h6>
+                        <a class="collapse-item <?php if($seccion==1040 && $active==1000){ echo "active"; };?>" href="<?=base_url(route_to('redes'))?>">Redes</a>
                     </div>
                 </div>
             </li>
@@ -81,12 +88,12 @@
                     <i class="fas fa-home"></i>
                     <span> Casa de Paz </span>
                 </a>
-                <div id="collapseCDP" class="collapse" aria-labelledby="headingUtilities"
+                <div id="collapseCDP" class="collapse <?php if($seccion>0 && $active==2000){ echo "show"; };?>" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <!--h6 class="collapse-header">Custom Utilities:</h6-->
-                        <a class="collapse-item" href="">Crear CDP</a>
-                        <a class="collapse-item" href="">Lista de CDP</a>
+                        <a class="collapse-item <?php if($seccion==2020 && $active==2000){ echo "active"; };?>" href="<?=base_url(route_to('cdp_crear'))?>">Crear CDP</a>
+                        <a class="collapse-item <?php if($seccion==2010 && $active==2000){ echo "active"; };?>" href="<?=base_url(route_to('cdp'))?>">Lista de CDP</a>
                     </div>
                 </div>
             </li>
@@ -96,12 +103,12 @@
                     <i class="fas fa-graduation-cap"></i>
                     <span> Escuelas de la Visión </span>
                 </a>
-                <div id="collapseEscuelas" class="collapse" aria-labelledby="headingUtilities"
+                <div id="collapseEscuelas" class="collapse <?php if($seccion>0 && $active==3000){ echo "show"; };?>" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <!--h6 class="collapse-header">Custom Utilities:</h6-->
-                        <a class="collapse-item" href="">Crear escula</a>
-                        <a class="collapse-item" href="">Lista de escuelas</a>
+                        <a class="collapse-item <?php if($seccion==3020 && $active==3000){ echo "active"; };?>" href="<?=base_url(route_to('escuela_crear'))?>">Crear escuela</a>
+                        <a class="collapse-item <?php if($seccion==3010 && $active==3000){ echo "active"; };?>" href="<?=base_url(route_to('escuela'))?>">Lista de escuelas</a>
                     </div>
                 </div>
             </li>
@@ -118,13 +125,13 @@
                     <i class="fas fa-fw fa-cogs"></i>
                     <span>Acciones</span>
                 </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div id="collapsePages" class="collapse <?php if($seccion>0 && $active==7000){ echo "show"; };?>" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header"> Tablas:</h6>
-                        <a class="collapse-item" href=""> Gobierno</a>
-                        <a class="collapse-item" href=""> Estatus de persona</a>
-                        <a class="collapse-item" href=""> Estado Civil</a>
-                        <a class="collapse-item" href=""> Áreas de Servicio </a>
+                        <a class="collapse-item <?php if($seccion==7010 && $active==7000){ echo "active"; };?>" href="<?=base_url(route_to('gobierno'))?>"> Gobierno</a>
+                        <a class="collapse-item <?php if($seccion==7020 && $active==7000){ echo "active"; };?>" href="<?=base_url(route_to('estatus'))?>"> Estatus de persona</a>
+                         <a class="collapse-item <?php if($seccion==7030 && $active==7000){ echo "active"; };?>" href="<?=base_url(route_to('estcivil'))?>"> Estado Civil</a>
+                         <a class="collapse-item <?php if($seccion==7040 && $active==7000){ echo "active"; };?>" href="<?=base_url(route_to('servicio'))?>"> Áreas de Servicio</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Sistema:</h6>
                         <a class="collapse-item" href=""> Configuraciones </a>

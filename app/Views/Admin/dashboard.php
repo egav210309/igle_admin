@@ -125,11 +125,10 @@ Dashboard
                                 <thead>
                                     <tr>
                                         <th>id</th>
-                                        <th>Username</th>
-                                        <th>Nombre Completo</th>
-                                        <th>Email</th>
-                                        <th>Teléfono</th>
-                                        <th>Gobierno</th>
+                                        <th>Escuela</th>
+                                        <th>Dirección</th>
+                                        <th>Día</th>
+                                        <th>Hora</th>
                                         <th>Estado</th>
                                         <th>Acciones</th>
                                     </tr>
@@ -137,16 +136,43 @@ Dashboard
                                 <tfoot>
                                     <tr>
                                         <th>id</th>
-                                        <th>Username</th>
-                                        <th>Nombre Completo</th>
-                                        <th>Email</th>
-                                        <th>Teléfono</th>
-                                        <th>Gobierno</th>
+                                        <th>Escuela</th>
+                                        <th>Dirección</th>
+                                        <th>Día</th>
+                                        <th>Hora</th>
                                         <th>Estado</th>
                                         <th>Acciones</th>
                                     </tr>
                                 </tfoot>
                                 <tbody>
+                                    <?php foreach ($escuela as $esc): ?>
+                                    <tr>
+                                        <td> <?= $esc->id_escuela ?></td>
+                                        <td> <?= $esc->nombre_escuela ?></td>
+                                        <td> <?= $esc->direccion_esc ?></td>
+                                        <td> <?= $esc->dia_que_realiza ?></td>
+                                        <td> <?= $esc->hora; ?></td>
+                                        <?php 
+                                            $stat = $esc->getEstatus();
+                                            switch ($stat) {
+                                                case 'inactivo':
+                                                   $descripstatus = '<i style="color:#dfdf07;" class="fa fa-check-circle"></i> '. $stat;
+                                                    break;
+                                                case 'pendiente':
+                                                    $descripstatus = '<i style="color:orange;" class="fa fa-check-circle"></i> '.$stat;
+                                                    break;
+                                                case 'baja':
+                                                    $descripstatus = '<i style="color:red;" class="fa fa-check-circle"></i> '.$stat;
+                                                    break;
+                                                default:
+                                                    $descripstatus = '<i style="color:green;" class="fa fa-check-circle"></i> '.$stat;
+                                                    break;
+                                            }
+                                        ?>
+                                        <td>  <?=$descripstatus  ?></td>
+                                        <td> <a href="<?= $esc->getEditRegister() ?>"> editar</a> </td>
+                                    </tr>        
+                                    <?php endforeach; ?>
                                 </tbody>
                             </table>
                     

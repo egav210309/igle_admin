@@ -1,6 +1,6 @@
 <?=$this->extend('Admin/main')?>
 <?=$this->section('title')?>
-Pueblo
+Escuelas de la Visión
 <?=$this->endSection();?>
 <?=$this->section('contentadmin') ?>
     <!-- Main Content -->
@@ -15,9 +15,9 @@ Pueblo
     <div class="container-fluid">
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Listado de personas <?=$title;?></h1>
-            <?php if($seccion == 1010){ ?>
-                <a href="<?=base_url(route_to('user_create'))?>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i> Nuevo usuario</a>
+            <h1 class="h3 mb-0 text-gray-800">Listado de escuelas de la Visión <i>(EDLV)</i> <?=$title;?></h1>
+            <?php if($seccion == 3010){ ?>
+                <a href="<?=base_url(route_to('escuela_crear'))?>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i> Nueva EDLV</a>
             <?php }?>
         </div>
         <!-- Content Row -->
@@ -26,19 +26,18 @@ Pueblo
             <div class="col-lg-12 mb-4">
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Pueblo</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Escuela</h6>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-bordered" id="listadogeneral" width="100%" cellspacing="0">
+                            <table class="table table-bordered" id="listadogeneraledlv" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
                                         <th>id</th>
-                                        <th>Username</th>
-                                        <th>Nombre Completo</th>
-                                        <th>Email</th>
-                                        <th>Teléfono</th>
-                                        <th>Gobierno</th>
+                                        <th>Escuela</th>
+                                        <th>Dirección</th>
+                                        <th>Día</th>
+                                        <th>Hora</th>
                                         <th>Estado</th>
                                         <th>Acciones</th>
                                     </tr>
@@ -46,26 +45,24 @@ Pueblo
                                 <tfoot>
                                     <tr>
                                         <th>id</th>
-                                        <th>Username</th>
-                                        <th>Nombre Completo</th>
-                                        <th>Email</th>
-                                        <th>Teléfono</th>
-                                        <th>Gobierno</th>
+                                        <th>Escuela</th>
+                                        <th>Dirección</th>
+                                        <th>Día</th>
+                                        <th>Hora</th>
                                         <th>Estado</th>
                                         <th>Acciones</th>
                                     </tr>
                                 </tfoot>
                                 <tbody>
-                                    <?php foreach ($personas as $pers): ?>
+                                    <?php foreach ($escuela as $esc): ?>
                                     <tr>
-                                        <td> <?= $pers->user_id ?></td>
-                                        <td> <?= $pers->username ?></td>
-                                        <td> <?= $pers->first_name." ".$pers->secund_name." ".$pers->last_name." ".$pers->secundlast_name ?></td>
-                                        <td> <?= $pers->usuario ?></td>
-                                        <td> <?= $pers->telefono ?></td>
-                                        <td> <?= $pers->getGobierno(); ?></td>
+                                        <td> <?= $esc->id_escuela ?></td>
+                                        <td> <?= $esc->nombre_escuela ?></td>
+                                        <td> <?= $esc->direccion_esc ?></td>
+                                        <td> <?= $esc->dia_que_realiza ?></td>
+                                        <td> <?= $esc->hora; ?></td>
                                         <?php 
-                                            $stat = $pers->getEstatus();
+                                            $stat = $esc->getEstatus();
                                             switch ($stat) {
                                                 case 'inactivo':
                                                    $descripstatus = '<i style="color:#dfdf07;" class="fa fa-check-circle"></i> '. $stat;
@@ -82,8 +79,7 @@ Pueblo
                                             }
                                         ?>
                                         <td>  <?=$descripstatus  ?></td>
-                                        <!--td> <a href="<?= $pers->getEditRegister() ?>"> editar</a> | <a href="<?= $pers->type ?>"> editar</a> </td-->
-                                        <td> <a href="<?= $pers->getEditRegister() ?>"> editar</a> </td>
+                                        <td> <a href="<?= $esc->getEditRegister() ?>"> editar</a> </td>
                                     </tr>        
                                     <?php endforeach; ?>
                                 </tbody>
@@ -103,7 +99,7 @@ Pueblo
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.9.2/tinymce.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
-        $('#listadogeneral').DataTable({
+        $('#listadogeneraledlv').DataTable({
             "scrollCollapse": true,
             "order": [[ 0, "asc" ]],
             "oLanguage": {

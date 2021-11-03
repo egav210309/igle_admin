@@ -38,7 +38,7 @@ class User extends Entity
 	public function getEstatus(){
 		if(!empty($this->attributes['cod_estado'])){
 			$status = model('EstatusModel');
-			return $status->nameGobierno($this->attributes['cod_estado'])[0]->name_estado;
+			return $status->nameEstatus($this->attributes['cod_estado'])[0]->name_estado;
 		}
 		return $this;
 	}

@@ -2,6 +2,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use App\Entities\Redes;
 
 class SubredesModel extends Model{
 
@@ -10,7 +11,7 @@ class SubredesModel extends Model{
 
     protected $useAutoIncrement = true;
 
-    protected $returnType     = 'object'; // como va a devolver las funciones
+    protected $returnType     = Redes::class; // como va a devolver las funciones
     protected $useSoftDeletes = true;
 
     protected $allowedFields = ['name_estado'];

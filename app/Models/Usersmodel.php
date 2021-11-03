@@ -71,6 +71,7 @@ class Usersmodel extends Model{
         $Usuario->where($column,  $value);
         return $Usuario->get()->getResult();
     }
+    
 }
 
 ?>
