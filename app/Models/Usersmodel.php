@@ -61,9 +61,15 @@ class Usersmodel extends Model{
 
 	//validar para iniciar sesión
 	public function iniciarsesion($data){
+
 		$Usuario = $this->db->table('users');
 		$Usuario->where($data);
-		return $Usuario->get()->getResult();
+        $datauser = $Usuario->get()->getResult();
+        if($datauser){ 
+		  return $datauser;
+        } else {
+            return false;
+        }
 	}
 
     public function getUser(string $column, string $value){

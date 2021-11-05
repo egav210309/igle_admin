@@ -35,19 +35,20 @@ class login extends BaseController
 
     	$usuario = trim($this->request->getVar('email'));
     	$password = trim($this->request->getVar('password'));
+        //die("==>> " . $password);
     	$Usuario = new Usersmodel();
 
-    	$datosUsuario = $Usuario->iniciarsesion(['usuario' => $usuario])[0];
+    	$existe = $Usuario->iniciarsesion(['usuario' => $usuario]);
 
-        $existe = $Usuario->getUser('usuario', $usuario);
-
-        if(!$datosUsuario){
+        if(!$existe){
             return redirect()->back()
                     ->with('msg', [
                         'type' => 'danger',
                         'body' => 'Este usuario no se encuentra registrado'
                     ]);
         }
+        $datosUsuario = $existe[0];
+
         $usuario = $Usuario->find($datosUsuario->user_id);
     	if($datosUsuario && password_verify($password, $datosUsuario->password)){
     		//guadamos variables de sesion

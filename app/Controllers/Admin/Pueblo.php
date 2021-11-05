@@ -119,6 +119,7 @@ class Pueblo extends BaseController
     }
     //funcionalidad para actualizar los registros
     public function update(){
+
 		$validation =  \Config\Services::validation();
 		$validation->setRules([
 			'userid'			=> 'required|is_not_unique[users.user_id]',
@@ -129,7 +130,6 @@ class Pueblo extends BaseController
 			'id_gobierno'		=> 'required',
 			'estadociv'			=> 'required'
 		]);
-		
 		if(!$validation->withRequest($this->request)->run()){
 			return redirect()->back()->withInput()
 							->with('msg', [
@@ -142,12 +142,15 @@ class Pueblo extends BaseController
 		if(trim($this->request->getVar('cdpbool')) == true){
 			$cdp = 1;
 		}
+		
+
 		$Usuario = new Usersmodel();
 		$user = $Usuario->find($this->request->getVar('userid'));
 		//contraseña
+		$passwordnew = password_hash(trim($this->request->getVar('password')), PASSWORD_DEFAULT);
 		if(!empty($this->request->getVar('password'))){
-			$Usuario->save([
-				'password'	=>	trim($this->request->getVar('password'))
+			$Usuario->set([
+				'password'	=>	$passwordnew
 			]);
 		};
 

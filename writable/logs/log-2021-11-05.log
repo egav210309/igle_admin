@@ -1,0 +1,180 @@
+ERROR - 2021-11-05 08:13:00 --> Column 'type' cannot be null
+CRITICAL - 2021-11-05 08:13:00 --> Column 'type' cannot be null
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query('INSERT INTO `us...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(150): CodeIgniter\BaseModel->save(Array)
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->update()
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#11 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-11-05 08:13:27 --> Column 'type' cannot be null
+CRITICAL - 2021-11-05 08:13:27 --> Column 'type' cannot be null
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query('INSERT INTO `us...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(150): CodeIgniter\BaseModel->save(Array)
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->update()
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#11 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-11-05 08:14:15 --> Column 'type' cannot be null
+CRITICAL - 2021-11-05 08:14:15 --> Column 'type' cannot be null
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query('INSERT INTO `us...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(150): CodeIgniter\BaseModel->save(Array)
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->update()
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#11 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-11-05 08:19:26 --> Column 'type' cannot be null
+CRITICAL - 2021-11-05 08:19:26 --> Column 'type' cannot be null
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query('INSERT INTO `us...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(152): CodeIgniter\BaseModel->save(Array)
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->update()
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#11 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-11-05 08:19:26 --> Column 'type' cannot be null
+CRITICAL - 2021-11-05 08:19:26 --> Column 'type' cannot be null
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query('INSERT INTO `us...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(152): CodeIgniter\BaseModel->save(Array)
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->update()
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#11 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-11-05 08:19:26 --> Column 'type' cannot be null
+CRITICAL - 2021-11-05 08:19:26 --> Column 'type' cannot be null
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query('INSERT INTO `us...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(152): CodeIgniter\BaseModel->save(Array)
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->update()
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#11 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-11-05 08:21:46 --> Cannot add or update a child row: a foreign key constraint fails (`igleadmin`.`users`, CONSTRAINT `grupos` FOREIGN KEY (`type`) REFERENCES `groups` (`id_group`) ON DELETE CASCADE)
+CRITICAL - 2021-11-05 08:21:46 --> Cannot add or update a child row: a foreign key constraint fails (`igleadmin`.`users`, CONSTRAINT `grupos` FOREIGN KEY (`type`) REFERENCES `groups` (`id_group`) ON DELETE CASCADE)
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query('REPLACE INTO `u...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `u...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `u...')
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1799): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `u...', Array, false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(397): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(1034): CodeIgniter\Model->doReplace(Array, false)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(152): CodeIgniter\BaseModel->replace(Array)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->update()
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-11-05 08:23:57 --> Column 'type' cannot be null
+CRITICAL - 2021-11-05 08:23:57 --> Column 'type' cannot be null
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query('INSERT INTO `us...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(152): CodeIgniter\BaseModel->save(Array)
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->update()
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#11 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-11-05 08:24:13 --> Column 'type' cannot be null
+CRITICAL - 2021-11-05 08:24:13 --> Column 'type' cannot be null
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query('INSERT INTO `us...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(153): CodeIgniter\BaseModel->save(Array)
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->update()
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#11 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-11-05 08:26:10 --> Uncaught ErrorException: Array to string conversion in /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php:150
+Stack trace:
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/Users/eduardor...', 150, Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->update()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-05 08:34:54 --> Undefined variable: passwordnew
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Pueblo.php(151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Users/eduardor...', 151, Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Pueblo->update()
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pueblo))
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-05 08:50:17 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/eduardor...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(39): spl_autoload_call('App\\Models\\User...')
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-05 08:51:04 --> syntax error, unexpected ';', expecting ')'
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/eduardor...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/login.php(39): spl_autoload_call('App\\Models\\User...')
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\login->login()
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
