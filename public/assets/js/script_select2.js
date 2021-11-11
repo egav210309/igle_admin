@@ -3,4 +3,6 @@
 $(document).ready(function() { 
     //buscar la persona para asignar casa de paz
     $("#user_id").select2();
+
+    $("#seg_user_id").select2();
 });

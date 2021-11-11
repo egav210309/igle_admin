@@ -35,4 +35,32 @@ class CasadepazModel extends Model{
     public function asignarCasadepaz(Casasig $ui){
         $this->infoAsign = $ui;
     }
+    //obtenermos el ultimo ID de casa de paz para asignarlo al segundo líder
+    public function getIdCasa(){
+        $db = db_connect();
+        $query = $db->query("SELECT id_cdp FROM casesdepaz ORDER BY id_cdp DESC LIMIT 1");
+        $result = $query->getRow();
+        return $result;
+    }
+    //asignamos casa de paz al segundo líder
+    public function asigSubLider($dataasig){
+        $model = model('CasaAsignacionModel');
+        $model->insert($dataasig);
+    }
+    //obtener los
+    public function getNameLider(){
+        $db = db_connect();
+        $query = $db->query("SELECT id_cdp FROM casadepaz_asinacion ORDER BY id_cdp DESC LIMIT 1");
+        $result = $query->getRow();
+        return $result;
+    }
+
+    //actualizamos los líderes asignados
+    public function eliminAsigcdp($idcdp){
+        $db = db_connect();
+        $query = $db->query("DELETE from casadepaz_asinacion WHERE id_cdp = '$idcdp'");
+
+    }
+
+
 }

@@ -1,0 +1,62 @@
+CRITICAL - 2021-11-11 07:00:41 --> Class 'App\Models\Diasdesemana' not found
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Casadepaz->edit('39')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Casadepaz))
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-11-11 07:03:06 --> syntax error, unexpected '}', expecting end of file
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render('Casadepaz/casad...', Array, true)
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Casadepaz.php(115): view('Casadepaz/casad...', Array)
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Casadepaz->edit('39')
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Casadepaz))
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-11 07:03:18 --> syntax error, unexpected '}', expecting end of file
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render('Casadepaz/casad...', Array, true)
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Casadepaz.php(115): view('Casadepaz/casad...', Array)
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Casadepaz->edit('39')
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Casadepaz))
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-11-11 07:06:17 --> Undefined variable: select
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Views/Casadepaz/casadepaz_edit.php(249): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Users/eduardor...', 249, Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/eduardor...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render('Casadepaz/casad...', Array, true)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Casadepaz.php(115): view('Casadepaz/casad...', Array)
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Casadepaz->edit('39')
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Casadepaz))
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-11 07:10:44 --> Undefined variable: select
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Views/Casadepaz/casadepaz_create.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Users/eduardor...', 205, Array)
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(214): include('/Users/eduardor...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Common.php(1092): CodeIgniter\View\View->render('Casadepaz/casad...', Array, true)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Casadepaz.php(46): view('Casadepaz/casad...', Array)
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Casadepaz->create()
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Casadepaz))
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-11-11 07:12:33 --> Cannot add or update a child row: a foreign key constraint fails (`igleadmin`.`casadepaz_asinacion`, CONSTRAINT `tipoasig` FOREIGN KEY (`tipo_asignacion`) REFERENCES `gobierno` (`id_gobierno`) ON DELETE CASCADE)
+CRITICAL - 2021-11-11 07:12:33 --> Cannot add or update a child row: a foreign key constraint fails (`igleadmin`.`casadepaz_asinacion`, CONSTRAINT `tipoasig` FOREIGN KEY (`tipo_asignacion`) REFERENCES `gobierno` (`id_gobierno`) ON DELETE CASCADE)
+#0 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(280): mysqli->query('INSERT INTO `ca...')
+#1 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Models/CasadepazModel.php(48): CodeIgniter\Model->insert(Array)
+#8 /Users/eduardorodriguez/Sites/localhost/igle_admin/app/Controllers/Admin/Casadepaz.php(88): App\Models\CasadepazModel->asigSubLider(Array)
+#9 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(802): App\Controllers\Admin\Casadepaz->store()
+#10 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Casadepaz))
+#11 /Users/eduardorodriguez/Sites/localhost/igle_admin/vendor/codeigniter4/framework/system/CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/eduardorodriguez/Sites/localhost/igle_admin/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}

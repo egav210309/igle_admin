@@ -62,11 +62,53 @@
                           </div>
                         </div>
                         <div class="field col-md-6">
-                          <label class="label">Líder:</label>
+                          <label class="label">Tipo de asignación:</label>
                           <div class="field has-addons">
                             <div class="select is-fullwidth">
                               <p class="control is-expanded has-icons-left">
                               <select class="form-control" id="tipo_asignacion" name="tipo_asignacion" style="padding-left: 2.5em;">
+                                  <option value=""> Tipo de Asignación </option>
+                                  <?php  foreach($tipo as $asig){
+                                    if($asig->id_gobierno == 5 or $asig->id_gobierno == 8){
+                                      echo "<option value='".$asig->id_gobierno."'>".ucfirst($asig->nombre)."</option>";
+                                    }
+                                } ?>
+                              </select>
+                              <span class="icon is-small is-left">
+                              <i class="fas fa-bookmark"></i>
+                            </span>
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field is-horizontal">
+                      <div class="field-label is-normal" style="padding-top: 0px;">
+                        <label class="label"></label>
+                      </div>
+                      <div class="field-body">
+                        <div class="field col-md-6">
+                          <label class="label">Líder:</label>
+                          <div class="field has-addons">
+                            <div class="select is-fullwidth">
+                              <p class="control is-expanded has-icons-left">
+                              <select class="form-control" id="seg_user_id" name="seg_user_id" style="padding-left: 2.5em;">
+                                  <option value=""> Seleccione el líder a cargo </option>
+                                  <?php  foreach($usuarios as $per){
+                                      echo "<option value='".$per->user_id."'>".strtolower($per->first_name)." ".strtolower($per->secund_name)." ".strtolower($per->last_name)." ".strtolower($per->secundlast_name)."</option>";
+                                } ?>
+                              </select>
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="field col-md-6">
+                          <label class="label">Tipo de asignación:</label>
+                          <div class="field has-addons">
+                            <div class="select is-fullwidth">
+                              <p class="control is-expanded has-icons-left">
+                              <select class="form-control" id="seg_tipo_asignacion" name="seg_tipo_asignacion" style="padding-left: 2.5em;">
                                   <option value=""> Tipo de Asignación </option>
                                   <?php  foreach($tipo as $asig){
                                     if($asig->id_gobierno == 5 or $asig->id_gobierno == 8){
@@ -156,10 +198,16 @@
                         <div class="field col-md-6" style="width: 12%;">
                           <label class="label">Día:</label>
                           <p class="control is-expanded has-icons-left">
-                            <input class="input" type="text" placeholder="Día" value="<?=old('dia_que_realiza') ;?>" id="dia_que_realiza" name="dia_que_realiza">
-                            <span class="icon is-small is-left">
-                              <i class="fas fa-calendar-week"></i>
-                            </span>
+                            <select class="form-control" id="dia_que_realiza" name="dia_que_realiza" style="padding-left: 2.5em;">
+                                  <option value=""> Día </option>
+                                  <?php  
+                                  foreach($diasemana as $dia){
+                                    echo "<option value='".$dia->dia."'>".ucfirst($dia->dia)."</option>";
+                                } ?>
+                              </select>
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-calendar-week"></i>
+                              </span>
                           </p>
                           <p class="msg_errors"><?=session('errors.dia_que_realiza')?></p>
                         </div>
@@ -235,7 +283,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('');?>/public/assets/select2/select2.min.css">
   <script type="text/javascript">
     $(document).ready(function() {
-      
+        $("#seg_user_id").select2();
     });
   </script>
 <?=$this->endSection();?>

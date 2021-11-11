@@ -39,6 +39,128 @@
                   <div class="card-header py-3">
                       <h6 class="m-0 font-weight-bold text-primary">Editar</h6>
                   </div>
+                                    <div class="card-body">
+                    <div class="field is-horizontal">
+                      <div class="field-label is-normal" style="padding-top: 0px;">
+                        <label class="label">Líderes asignados: </label>
+                      </div>
+                      <div class="field-body">
+                        <div class="field col-md-6">
+                          <label class="label">Líder:</label>
+                          <div class="field has-addons">
+                            <div class="select is-fullwidth">
+                              <p class="control is-expanded has-icons-left">
+                              <select class="form-control" id="user_id" name="user_id" style="padding-left: 2.5em;">
+                                  <option value=""> Seleccione el líder a cargo </option>
+                                  <?php  
+                                  $primerlider = "";
+                                  $selec1 = "";
+                                  foreach($usuarios as $per){
+                                    $selec1 = "";
+                                    foreach ($liderasig as $asig) { // para seleccionar el user que esta asignado
+                                      if($asig->user_id == $per->user_id && $primerlider == ""){
+                                        $primerlider = $asig->user_id;
+                                        $selec1 = "selected";
+                                      }
+                                      break;
+                                    }
+                                    echo "<option value='".$per->user_id."'".$selec1.">".strtolower($per->first_name)." ".strtolower($per->secund_name)." ".strtolower($per->last_name)." ".strtolower($per->secundlast_name)."</option>";
+                                } ?>
+                              </select>
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="field col-md-6">
+                          <label class="label">Tipo de asignación:</label>
+                          <div class="field has-addons">
+                            <div class="select is-fullwidth">
+                              <p class="control is-expanded has-icons-left">
+                              <select class="form-control" id="tipo_asignacion" name="tipo_asignacion" style="padding-left: 2.5em;">
+                                  <option value=""> Tipo de Asignación </option>
+                                  <?php  
+                                  $secl = "";
+                                  $primerli = "";
+                                  foreach($tipo as $asig){
+                                    if($asig->id_gobierno == 5 or $asig->id_gobierno == 8){
+                                        $secl = "";
+                                        foreach ($liderasig as $asiglid) { // para seleccionar el user que esta asignado
+                                          if($asiglid->tipo_asignacion == $asig->id_gobierno && $primerli == ""){
+                                            $primerli = $asiglid->tipo_asignacion;
+                                            $secl = "selected";
+                                          }
+                                          break;
+                                        }
+                                      echo "<option ".$secl." value='".$asig->id_gobierno."'>".ucfirst($asig->nombre)."</option>";
+                                    }
+                                } ?>
+                              </select>
+                              <span class="icon is-small is-left">
+                              <i class="fas fa-bookmark"></i>
+                            </span>
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field is-horizontal">
+                      <div class="field-label is-normal" style="padding-top: 0px;">
+                        <label class="label"></label>
+                      </div>
+                      <div class="field-body">
+                        <div class="field col-md-6">
+                          <label class="label">Líder:</label>
+                          <div class="field has-addons">
+                            <div class="select is-fullwidth">
+                              <p class="control is-expanded has-icons-left">
+                              <select class="form-control" id="seg_user_id" name="seg_user_id" style="padding-left: 2.5em;">
+                                  <option value=""> Seleccione el líder a cargo</option>
+                                  <?php  foreach($usuarios as $per){
+                                      $selec2 = "";
+                                      foreach ($liderasig as $asig) { // para seleccionar el user que esta asignado
+                                        if($asig->user_id != $primerlider && $asig->user_id == $per->user_id){
+                                          $selec2 = "selected";
+                                          break;
+                                        }
+                                      }
+                                      echo "<option value='".$per->user_id."'".$selec2 .">".strtolower($per->first_name)." ".strtolower($per->secund_name)." ".strtolower($per->last_name)." ".strtolower($per->secundlast_name)."</option>";
+                                } ?>
+                              </select>
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="field col-md-6">
+                          <label class="label">Tipo de asignación:</label>
+                          <div class="field has-addons">
+                            <div class="select is-fullwidth">
+                              <p class="control is-expanded has-icons-left">
+                              <select class="form-control" id="seg_tipo_asignacion" name="seg_tipo_asignacion" style="padding-left: 2.5em;">
+                                  <option value=""> Tipo de Asignación </option>
+                                  <?php  foreach($tipo as $asig){
+                                    if($asig->id_gobierno == 5 or $asig->id_gobierno == 8){
+                                      $selecl2 = "";
+                                      foreach ($liderasig as $asigl) { // para seleccionar el user que esta asignado
+                                        if($asigl->tipo_asignacion != $primerli && $asigl->tipo_asignacion == $asig->id_gobierno){
+                                          $selecl2 = "selected";
+                                          break;
+                                        }
+                                      }
+                                      echo "<option ".$selecl2." value='".$asig->id_gobierno."'>".ucfirst($asig->nombre)."</option>";
+                                    }
+                                } ?>
+                              </select>
+                              <span class="icon is-small is-left">
+                              <i class="fas fa-bookmark"></i>
+                            </span>
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="card-body">
                     <!-- Datos personales -->
                     <div class="field is-horizontal">
@@ -112,10 +234,20 @@
                         <div class="field col-md-6" style="width: 12%;">
                           <label class="label">Día:</label>
                           <p class="control is-expanded has-icons-left">
-                            <input class="input" type="text" placeholder="Día" value="<?=old('dia_que_realiza') ?? ucfirst($casa->dia_que_realiza);?>" id="dia_que_realiza" name="dia_que_realiza">
-                            <span class="icon is-small is-left">
-                              <i class="fas fa-calendar-week"></i>
-                            </span>
+                            <select class="form-control" id="dia_que_realiza" name="dia_que_realiza" style="padding-left: 2.5em;">
+                                  <option value=""> Día </option>
+                                  <?php  
+                                  $select = "";
+                                  foreach($diasemana as $dia){
+                                    if($casa->dia_que_realiza == $dia->dia){
+                                      $select = "selected";
+                                    }
+                                    echo "<option ".$select." value='".$dia->dia."'>".ucfirst($dia->dia)."</option>";
+                                } ?>
+                              </select>
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-calendar-week"></i>
+                              </span>
                           </p>
                           <p class="msg_errors"><?=session('errors.dia_que_realiza')?></p>
                         </div>
@@ -196,12 +328,7 @@
         height:250
       });
       $(document).ready(function() {
-        $(".class_cdp").click(function(){
-          /*var val = document.getElementById('cdpbool').val;
-          alert(val)
-          document.getElementById('casadepaz').val = val;*/
-          
-        })
+        $("#seg_user_id").select2();
       });
   </script>
 <?=$this->endSection();?>

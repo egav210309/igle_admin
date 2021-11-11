@@ -23,4 +23,21 @@ class Casapaz extends Entity
 	public function getEditRegister(){
 		return base_url(route_to('cdp_edit', $this->id_cdp));
 	}
+	//obtener los lideres de la casa de paz
+	public function getlideres(){
+		if(!empty($this->attributes['id_cdp'])){
+			$asignacion = model('CasaAsignacionModel');
+			$lideres = $asignacion->getLiderAsig($this->attributes['id_cdp']);
+			$nombreslideres = "";
+			$tipoasig  = "";
+			foreach ($lideres as $dat) {
+				$tipoasig = "";
+				$asig = model('GobModel');
+				$tipoasig = $asig->getGobName($dat->tipo_asignacion)[0]->nombre;
+				$nombreslideres .= "<li>".$dat->first_name. " " . $dat->last_name ." (".$tipoasig.") </li>" ;
+			}
+			return $nombreslideres;
+		}
+		return $this;
+	}
 }

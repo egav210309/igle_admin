@@ -86,6 +86,7 @@ $routes->group('admin', ['namespace' => 'App\Controllers\Admin', 'filter' => 'au
     $routes->get('estadocivil', 'Settings::estadocivilList', ['as' => 'estcivil']);
     $routes->get('servicio', 'Settings::servicioList', ['as' => 'servicio']);
     $routes->get('st/editar/(:any)', 'Settings::edit/$1/$1', ['as' => 'editsettig']);
+    
 });
 
 

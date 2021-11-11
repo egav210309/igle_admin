@@ -3,7 +3,7 @@ namespace App\Entities;
 
 use CodeIgniter\Entity;
 
-class Casasig extends Entity
+class Diasdesemana extends Entity
 {
 
 	protected $dates = [
@@ -12,8 +12,5 @@ class Casasig extends Entity
 		'deleted_at'
 	];
 
-	public function getUserId(){
-		return $this->user_id;
-	}
 
 }

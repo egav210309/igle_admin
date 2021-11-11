@@ -35,8 +35,8 @@ Casa de Paz
                                     <tr>
                                         <th>id</th>
                                         <th>Casa</th>
+                                        <th>Líderes</th>
                                         <th>Dirección</th>
-                                        <th>Ubicación</th>
                                         <th>Día</th>
                                         <th>Hora</th>
                                         <th>Estado</th>
@@ -47,8 +47,8 @@ Casa de Paz
                                     <tr>
                                         <th>id</th>
                                         <th>Casa</th>
+                                        <th>Líderes</th>
                                         <th>Dirección</th>
-                                        <th>Ubicación</th>
                                         <th>Día</th>
                                         <th>Hora</th>
                                         <th>Estado</th>
@@ -60,8 +60,8 @@ Casa de Paz
                                     <tr>
                                         <td> <?= $casa->id_cdp ?></td>
                                         <td> <?= $casa->nombre_cdp ?></td>
+                                        <td> <?= $casa->getlideres(); ?></td>
                                         <td> <?= $casa->direccion_cdp ?></td>
-                                        <td> <?= $casa->ubicacion ?></td>
                                         <td> <?= $casa->dia_que_realiza ?></td>
                                         <td> <?= $casa->hora; ?></td>
                                         <?php 
