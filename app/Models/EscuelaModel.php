@@ -15,7 +15,7 @@ class EscuelaModel extends Model{
     protected $returnType     = Escuelavision::class; // como va a devolver las funciones
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['nombre_escuela','direccion_esc', 'dia_que_realiza', 'hora', 'cod_estatus', 'telefonos'];
+    protected $allowedFields = ['nombre_escuela','observac_escuela', 'cod_estatus'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -27,12 +27,18 @@ class EscuelaModel extends Model{
     protected $afterInsert  = ['asignacioEscuela'];
 
     protected function asignacioEscuela($data){
-        $this->infoAsign->id_escuela = $data['id'];
-        $model = model('EscuelaporpersonaModel');
-        $model->insert($this->infoAsign);
+        //$this->infoAsign->id_escuela = $data['id'];
+        //$model = model('EscuelaporpersonaModel');
+        //$model->insert($this->infoAsign);
     }
 
     public function asignarEscuela(Escuelaporpersona $ui){
         $this->infoAsign = $ui;
+    }
+    //obtener la escuela
+    public function getEscuela(string $column, string $value){
+        $Usuario = $this->db->table('escueladelavision');
+        $Usuario->where($column,  $value);
+        return $Usuario->get()->getResult();
     }
 }

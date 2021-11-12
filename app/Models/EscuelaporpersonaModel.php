@@ -2,6 +2,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use App\Entities\Escuelaporpersona;
 
 class EscuelaporpersonaModel extends Model{
 
@@ -10,10 +11,10 @@ class EscuelaporpersonaModel extends Model{
 
     protected $useAutoIncrement = true;
 
-    protected $returnType     = 'object'; // como va a devolver las funciones
+    protected $returnType     = Escuelaporpersona::class; // como va a devolver las funciones
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['id_escuela','user_id', 'tipo_asignacion'];
+    protected $allowedFields = ['id_escuela','user_id', 'observaciones_escuela', 'estado_escuela', 'anio', 'fecha_completada'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';

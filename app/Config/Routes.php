@@ -79,6 +79,11 @@ $routes->group('admin', ['namespace' => 'App\Controllers\Admin', 'filter' => 'au
     $routes->get('escuela/editar/(:any)', 'Escuela::edit/$1', ['as' => 'escuela_edit']);
     $routes->post('escuela/actualizar', 'Escuela::update', ['as' => 'escuela_actualizar']);
     $routes->post('escuela_store', 'Escuela::store', ['as' => 'escuela_store']);
+    $routes->get('escuela_registrar', 'Escuela::registrarescuenta', ['as' => 'escuela_registrar']);
+    $routes->post('escuela_regis_store', 'Escuela::registro_store', ['as' => 'escuela_regis_store']);
+    $routes->get('registros_escuela', 'Escuela::lista_registros', ['as' => 'registros_escuela']);
+    $routes->get('escuela/editar/(:any)', 'Escuela::edit_escuelacursada/$1', ['as' => 'registroescuela_edit']);
+    $routes->post('escuela/regi_actualizar', 'Escuela::registro_update', ['as' => 'escuela_regis_actualiza']);
 
     //Mantenimiento de tablas
     $routes->get('gobierno', 'Settings::gobList', ['as' => 'gobierno']);

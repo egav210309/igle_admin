@@ -14,7 +14,7 @@ class CasaAsignacionModel extends Model{
     protected $returnType     = Casasig::class; // como va a devolver las funciones
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['id_cdp','user_id', 'tipo_asignacion'];
+    protected $allowedFields = ['id_cdp','user_id','observaciones_escuela'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';

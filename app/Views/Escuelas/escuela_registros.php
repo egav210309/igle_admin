@@ -34,8 +34,9 @@ Escuelas de la Visión
                                 <thead>
                                     <tr>
                                         <th>id</th>
+                                        <th>Estudiante</th>
                                         <th>Escuela</th>
-                                        <th>Descripción de la Escuela</th>
+                                        <th align="center">Fecha Completada</th>
                                         <th>Estado</th>
                                         <th>Acciones</th>
                                     </tr>
@@ -43,8 +44,9 @@ Escuelas de la Visión
                                 <tfoot>
                                     <tr>
                                         <th>id</th>
+                                        <th>Estudiante</th>
                                         <th>Escuela</th>
-                                        <th>Descripción de la Escuela</th>
+                                        <th align="center">Fecha Completada</th>
                                         <th>Estado</th>
                                         <th>Acciones</th>
                                     </tr>
@@ -52,9 +54,16 @@ Escuelas de la Visión
                                 <tbody>
                                     <?php foreach ($escuela as $esc): ?>
                                     <tr>
-                                        <td> <?= $esc->id_escuela ?></td>
-                                        <td> <?= $esc->nombre_escuela ?></td>
-                                        <td> <?= $esc->observac_escuela ?></td>
+                                        <td> <?= $esc->id ?></td>
+                                        <td> <?= $esc->getlideres(); ?></td>
+                                        <td> <?= $esc->getescuela(); ?></td>
+                                        <td align="center" > <?php 
+                                        if(empty($esc->fecha_completada)){
+                                            echo "-- -- ";
+                                        } else {
+                                            echo $esc->fecha_completada;
+                                        }
+                                        ?></td>
                                         <?php 
                                             $stat = $esc->getEstatus();
                                             switch ($stat) {

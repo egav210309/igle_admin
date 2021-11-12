@@ -106,7 +106,10 @@
                 <div id="collapseEscuelas" class="collapse <?php if($seccion>0 && $active==3000){ echo "show"; };?>" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <!--h6 class="collapse-header">Custom Utilities:</h6-->
+                        <h6 class="collapse-header">Registro:</h6>
+                        <a class="collapse-item <?php if($seccion==3030 && $active==3000){ echo "active"; };?>" href="<?=base_url(route_to('escuela_registrar'))?>">Registro escuela curzada</a>
+                        <a class="collapse-item <?php if($seccion==3040 && $active==3000){ echo "active"; };?>" href="<?=base_url(route_to('registros_escuela'))?>">Escuelas cursadas</a>
+                        <!--h6 class="collapse-header">Mantenimiento Escuela:</h6-->
                         <a class="collapse-item <?php if($seccion==3020 && $active==3000){ echo "active"; };?>" href="<?=base_url(route_to('escuela_crear'))?>">Crear escuela</a>
                         <a class="collapse-item <?php if($seccion==3010 && $active==3000){ echo "active"; };?>" href="<?=base_url(route_to('escuela'))?>">Lista de escuelas</a>
                     </div>

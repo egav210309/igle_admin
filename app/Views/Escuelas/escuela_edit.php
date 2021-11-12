@@ -51,7 +51,7 @@
                           <input type="hidden" name="id_escuela" id="id_escuela" value="<?=$escuela->id_escuela?>">
                           <label class="label">Escuela:</label>
                           <p class="control is-expanded has-icons-left">
-                            <input class="input" type="text" placeholder="Escuela de la Visión" value="<?=old('nombre_escuela')  ?? strtolower($escuela->nombre_escuela) ;?>" id="nombre_escuela" name="nombre_escuela" >
+                            <input class="input" type="text" placeholder="Escuela de la Visión" value="<?=old('nombre_escuela')  ?? ucfirst($escuela->nombre_escuela) ;?>" id="nombre_escuela" name="nombre_escuela" >
                             <span class="icon is-small is-left">
                               <i class="fas fa-school"></i>
                             </span>
@@ -66,62 +66,14 @@
                       </div>
                       <div class="field-body">
                         <div class="field col-md-10">
-                          <label class="label">Dirección: </label>
+                          <label class="label"> Descripción de la Escuela: </label>
                           <div class="control">
-                            <textarea class="textarea" id="direccion_esc" name="direccion_esc" placeholder="Dirección de la Escuela"><?=old('direccion_esc') ?? strtolower($escuela->direccion_esc) ;?></textarea>
+                            <textarea class="textarea" id="observac_escuela" name="observac_escuela" placeholder="Descripcion"><?=old('observac_escuela')  ?? ucfirst($escuela->observac_escuela);?></textarea>
                           </div>
                         </div>
-                        <p class="msg_errors"><?=session('errors.direccion_esc')?></p>
+                        <p class="msg_errors"><?=session('errors.observac_escuela')?></p>
                       </div>
                     </div>
-                    <div class="field is-horizontal">
-                      <div class="field-label is-normal">
-                        <label class="label"></label>
-                      </div>
-                      <div class="field-body ">
-                        <div class="field">
-                          <label class="label">Teléfono:</label>
-                          <div class="field has-addons">
-                            <p class="control">
-                              <a class="button is-static">
-                                +502
-                              </a>
-                            </p>
-                            <p class="control is-expanded">
-                              <input class="input" type="tel" placeholder="" id="telefonos" name="telefonos" value="<?=old('telefonos') ?? strtolower($escuela->telefonos);?>">
-                            </p>
-                            <p class="msg_errors"><?=session('errors.telefonos')?></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="field is-horizontal">
-                      <div class="field-label is-normal">
-                        <label class="label"></label>
-                      </div>
-                      <div class="field-body">
-                        <div class="field col-md-6" style="width: 12%;">
-                          <label class="label">Día:</label>
-                          <p class="control is-expanded has-icons-left">
-                            <input class="input" type="text" placeholder="Día" value="<?=old('dia_que_realiza') ?? strtolower($escuela->dia_que_realiza);?>" id="dia_que_realiza" name="dia_que_realiza">
-                            <span class="icon is-small is-left">
-                              <i class="fas fa-calendar-week"></i>
-                            </span>
-                          </p>
-                          <p class="msg_errors"><?=session('errors.dia_que_realiza')?></p>
-                        </div>
-                        <div class="field col-md-6">
-                          <label class="label">Hora:</label>
-                          <p class="control is-expanded has-icons-left">
-                            <input class="input" type="time" placeholder="Hora" value="<?=old('hora') ?? strtolower($escuela->hora);?>" id="hora" name="hora">
-                            <span class="icon is-small is-left">
-                              <i class="fas fa-clock"></i>
-                            </span>
-                          </p>
-                          <p class="msg_errors"><?=session('errors.hora')?></p>
-                        </div>
-                      </div>
-                    </div> 
                     <div class="field is-horizontal">
                       <div class="field-label is-normal">
                         <label class="label"></label>

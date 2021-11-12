@@ -3,6 +3,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 use App\Entities\User;
+use App\Entities\Escuelaporpersona;
 
 class Usersmodel extends Model{
 
